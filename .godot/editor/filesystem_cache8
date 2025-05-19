@@ -1,0 +1,61 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1747622480
+icon.svg::CompressedTexture2D::3188743207450022876::1747587674::1747587694::1::::<><>::
+::res://assets/::1747594317
+::res://assets/sounds/::1747587814
+::res://assets/sprites/::1747604252
+::res://assets/sprites/backgrounds/::1747628808
+bg_layer_1.png::CompressedTexture2D::3321790168256995624::1747628808::1747628823::1::::<><>::
+bg_layer_2.png::CompressedTexture2D::7707013852979401518::1747628788::1747628823::1::::<><>::
+bg_layer_3.png::CompressedTexture2D::7367339695866330973::1747628631::1747628661::1::::<><>::
+bg_layer_4.png::CompressedTexture2D::6192042064161645273::1747628604::1747628734::1::::<><>::
+bg_layer_5.png::CompressedTexture2D::5990821961219104427::1747628579::1747628661::1::::<><>::
+bg_layer_6.png::CompressedTexture2D::6071709293566812694::1747628545::1747628661::1::::<><>::
+::res://assets/sprites/enemies/::1747596731
+::res://assets/sprites/enemies/SAHDOW Series - Frost Curse Boss/::1747596723
+::res://assets/sprites/enemies/SAHDOW Series - Frost Curse Boss/SAHDOW Series - Frost Curse Boss/::1725389064
+::res://assets/sprites/enemies/SAHDOW Series - Frost Curse Boss/SAHDOW Series - Frost Curse Boss/Sprite/::1747596970
+1. idle.png::CompressedTexture2D::1872126276873470692::1725388513::1747596970::1::::<><>::
+2. run.png::CompressedTexture2D::761798578333030161::1725388524::1747596970::1::::<><>::
+3. attack 1 - 1.png::CompressedTexture2D::6576796127990874569::1725388652::1747596970::1::::<><>::
+3. attack 1 - 2.png::CompressedTexture2D::662275934824437817::1725388678::1747596970::1::::<><>::
+4. idle + Shield.png::CompressedTexture2D::1885880242677436067::1725388767::1747596970::1::::<><>::
+5. full Shield.png::CompressedTexture2D::401487477923904933::1725388804::1747596970::1::::<><>::
+6. shoot effect.png::CompressedTexture2D::2914477348132305446::1725388885::1747596970::1::::<><>::
+7. jump.png::CompressedTexture2D::9189448234306471097::1725388922::1747596970::1::::<><>::
+8. fall.png::CompressedTexture2D::4858086862517566410::1725388932::1747596970::1::::<><>::
+9. Death.png::CompressedTexture2D::6972508490802902325::1725388966::1747596970::1::::<><>::
+::res://assets/sprites/enemies/SHADOW Series - The Shadowed Wetlands Boss/::1747596539
+::res://assets/sprites/enemies/SHADOW Series - The Shadowed Wetlands Boss/SHADOW Series - The Shadowed Wetlands Boss/::1711311074
+::res://assets/sprites/enemies/SHADOW Series - The Shadowed Wetlands Boss/SHADOW Series - The Shadowed Wetlands Boss/Sprite Sheet/::1747596970
+Attack 1.png::CompressedTexture2D::5713197448444609490::1711311034::1747596970::1::::<><>::
+Attack 2.png::CompressedTexture2D::4683434126838091724::1711311016::1747596970::1::::<><>::
+idle.png::CompressedTexture2D::3746564210222503218::1711310991::1747596970::1::::<><>::
+walk.png::CompressedTexture2D::1316898845993113891::1711311002::1747596970::1::::<><>::
+::res://assets/sprites/items/::1747595262
+::res://assets/sprites/items/FlyingObelisk_Simple/::1747596970
+FlyingObelisk_no_lightnings_no_letter.png::CompressedTexture2D::1763318765797357032::1747595253::1747596970::1::::<><>::
+::res://assets/sprites/player/::1747594401
+::res://assets/sprites/player/SHADOW Series - The Blind Huntress/::1747594438
+::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Asprite/::1711087517
+::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/::1747594783
+1. Idle 48 x 48.png::CompressedTexture2D::7066887809969462492::1711087720::1747594783::1::::<><>::
+2. Run 48 x 48.png::CompressedTexture2D::6423611190916514194::1711087734::1747594783::1::::<><>::
+3. Jump 48 x 48.png::CompressedTexture2D::5120806202868157858::1711087753::1747594783::1::::<><>::
+4. Fall 48 x 48.png::CompressedTexture2D::4518595908826887328::1711087762::1747594783::1::::<><>::
+5. Attack 131 x 56.png::CompressedTexture2D::4752638503613123869::1711087651::1747594783::1::::<><>::
+6. Dash 112 x 56.png::CompressedTexture2D::7369303854839148455::1711087684::1747594783::1::::<><>::
+7. Hit 48 x 48.png::CompressedTexture2D::4919214908958060549::1711087780::1747594783::1::::<><>::
+8. Death 76 x 48.png::CompressedTexture2D::8803464891614596399::1711087874::1747594783::1::::<><>::
+::res://assets/sprites/tilesets/::1747603479
+::res://assets/sprites/tilesets/shadow map Asset/::1747603474
+::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/::1747606556
+Tilemap.png::CompressedTexture2D::2805444131831315147::1747606481::1747606556::1::::<><>::
+::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747602833
+::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747603494
+tile map.png::CompressedTexture2D::591424773554523410::1718128450::1747603494::1::::<><>::
+::res://scenes/::1747626560
+main.tscn::PackedScene::8876151798454143804::1747626559::0::1::::<><>::uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png
+player.tscn::PackedScene::7440879949689737896::1747626560::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://b8yhi5vhfucaf::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/5. Attack 131 x 56.png<>uid://dc80mfv1ldey6::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/6. Dash 112 x 56.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
+::res://scripts/::1747626552
+player.gd::GDScript::-1::1747626552::0::1::::<>CharacterBody2D<>::
