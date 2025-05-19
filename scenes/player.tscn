@@ -526,7 +526,7 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D"]
-position = Vector2(70, 171)
+position = Vector2(70, 189)
 script = ExtResource("1_37rgs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

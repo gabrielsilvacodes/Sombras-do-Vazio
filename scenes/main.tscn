@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://dypw6nllcj6m7"]
+[gd_scene load_steps=15 format=3 uid="uid://dypw6nllcj6m7"]
 
 [ext_resource type="PackedScene" uid="uid://deaog8yxd7cxc" path="res://scenes/player.tscn" id="1_fpvab"]
 [ext_resource type="Texture2D" uid="uid://ioqxdvqitdqo" path="res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png" id="1_gkua6"]
 [ext_resource type="Texture2D" uid="uid://bf78iw0mt4740" path="res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png" id="2_k0u1a"]
 [ext_resource type="Texture2D" uid="uid://csrgfuyi80mly" path="res://assets/sprites/backgrounds/bg_layer_6.png" id="4_2iw1v"]
 [ext_resource type="Texture2D" uid="uid://crl87ytnrjvt0" path="res://assets/sprites/backgrounds/bg_layer_5.png" id="5_fpabe"]
+[ext_resource type="Shader" path="res://shaders/movement_clouds.gdshader" id="6_xgmel"]
 [ext_resource type="Texture2D" uid="uid://cuhqa7rstafen" path="res://assets/sprites/backgrounds/bg_layer_4.png" id="6_y50iu"]
 [ext_resource type="Texture2D" uid="uid://dc72ajyrn3uft" path="res://assets/sprites/backgrounds/bg_layer_3.png" id="7_f5xfv"]
 [ext_resource type="Texture2D" uid="uid://dh2lnllb3m8fa" path="res://assets/sprites/backgrounds/bg_layer_2.png" id="8_hakth"]
@@ -8629,6 +8630,10 @@ physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_vax26")
 sources/5 = SubResource("TileSetAtlasSource_umnq3")
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yhapv"]
+shader = ExtResource("6_xgmel")
+shader_parameter/move_speed = 0.05
+
 [node name="Main" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -8667,7 +8672,9 @@ position = Vector2(0, -57)
 motion_scale = Vector2(0.3, 1)
 motion_mirroring = Vector2(698, 0)
 
-[node name="texture" type="Sprite2D" parent="bg/04"]
+[node name="clouds" type="Sprite2D" parent="bg/04"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_yhapv")
 texture = ExtResource("6_y50iu")
 centered = false
 
