@@ -8675,10 +8675,10 @@ position = Vector2(1057, 206)
 position = Vector2(604, 48)
 
 [node name="lux10" parent="lux" instance=ExtResource("3_ouj7x")]
-position = Vector2(411, 196)
+position = Vector2(364, 170)
 
 [node name="moving_platform" parent="." instance=ExtResource("3_gyx6w")]
-position = Vector2(325, 225)
+position = Vector2(325, 200)
 
 [node name="moving_platform2" parent="." instance=ExtResource("3_gyx6w")]
 position = Vector2(600, 250)
