@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747711677
+::res://::1747749405
 ::res://assets/::1747669409
 ::res://assets/sounds/::1747587814
 ::res://assets/sprites/::1747669412
@@ -149,7 +149,7 @@ border 2.png::CompressedTexture2D::7698650964410537963::1724524857::1747668447::
 border 3.png::CompressedTexture2D::456260514226445645::1724524868::1747668447::1::::<><>::
 border 4.png::CompressedTexture2D::6048687595786562189::1724524876::1747668447::1::::<><>::
 ::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/::1724525809
-::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/::1747717194
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/::1747717212
 alterado.png::CompressedTexture2D::3768111320998845140::1747717194::1747717212::1::::<><>::
 Loading Icons 1.png::CompressedTexture2D::2674837252123291749::1724525816::1747668447::1::::<><>::
 Loading Icons 2.png::CompressedTexture2D::5598100278846528942::1724525826::1747668447::1::::<><>::
@@ -160,13 +160,15 @@ Loading Icons 7.png::CompressedTexture2D::1833354693540400422::1724525884::17476
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747602833
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747603494
 tile map.png::CompressedTexture2D::591424773554523410::1718128450::1747603494::1::::<><>::
-::res://prefabs/::1747713083
-moving_platform.tscn::PackedScene::8025240548093838181::1747713083::0::1::::<><>::uid://cjn0b44d4mdnh::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
-::res://scenes/::1747713082
-main.tscn::PackedScene::8876151798454143804::1747713082::0::1::::<><>::uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://dmlqslpvenqxp::::res://prefabs/moving_platform.tscn<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>res://shaders/movement_clouds.gdshader<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png
-player.tscn::PackedScene::7440879949689737896::1747713082::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://b8yhi5vhfucaf::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/5. Attack 131 x 56.png<>uid://dc80mfv1ldey6::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/6. Dash 112 x 56.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
-::res://scripts/::1747700051
+::res://prefabs/::1747723345
+lux.tscn::PackedScene::5195154479101603689::1747723345::0::1::::<><>::res://scripts/lux.gd<>uid://btxkii3cvpbu7::::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/alterado.png<>uid://dvfafm3hmjf77::::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/Bright_Sparkle (16 x 16).png
+moving_platform.tscn::PackedScene::8025240548093838181::1747723343::0::1::::<><>::uid://cjn0b44d4mdnh::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
+::res://scenes/::1747723341
+main.tscn::PackedScene::8876151798454143804::1747723338::0::1::::<><>::uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://dmlqslpvenqxp::::res://prefabs/moving_platform.tscn<>uid://cgato2fbhscll::::res://prefabs/lux.tscn<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>res://shaders/movement_clouds.gdshader<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png
+player.tscn::PackedScene::7440879949689737896::1747723341::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://b8yhi5vhfucaf::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/5. Attack 131 x 56.png<>uid://dc80mfv1ldey6::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/6. Dash 112 x 56.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
+::res://scripts/::1747722915
+lux.gd::GDScript::-1::1747722915::0::1::::<>Area2D<>::
 moving_platform.gd::GDScript::-1::1747700051::0::1::::<>Node2D<>::
 player.gd::GDScript::-1::1747630793::0::1::::<>CharacterBody2D<>::
-::res://shaders/::1747713083
-movement_clouds.gdshader::Shader::-1::1747713083::0::1::::<><>::
+::res://shaders/::1747723411
+movement_clouds.gdshader::Shader::-1::1747723411::0::1::::<><>::
