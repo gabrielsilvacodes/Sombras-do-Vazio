@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmlqslpvenqxp"]
+
+[ext_resource type="Texture2D" uid="uid://cjn0b44d4mdnh" path="res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png" id="2_tjl1t"]
+
+[sub_resource type="GDScript" id="GDScript_g4ecl"]
+script/source = "extends Node2D
+
+const WAIT_DURATION := 1.0
+
+@onready var platform := $platform as AnimatableBody2D
+@export var move_speed := 3.0
+@export var distance := 192
+@export var move_horizontal := true
+
+var follow := Vector2.ZERO
+var platform_center := 16
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	move_platform()
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _physics_process(delta: float) -> void:
+	platform.position = platform.position.lerp(follow, 0.5)
+
+func move_platform():
+	var move_direction = Vector2.RIGHT * distance if move_horizontal else Vector2.UP * distance
+	var duration = move_direction.length() / float(move_speed * platform_center)
+	
+	var platform_tween = create_tween().set_loops().set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+	platform_tween.tween_property(self, \"follow\", move_direction, duration).set_delay(WAIT_DURATION)
+	platform_tween.tween_property(self, \"follow\", Vector2.ZERO, duration).set_delay(duration + WAIT_DURATION * 2)
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kpgia"]
+size = Vector2(32, 16)
+
+[node name="moving_platform" type="Node2D"]
+script = SubResource("GDScript_g4ecl")
+
+[node name="platform" type="AnimatableBody2D" parent="."]
+collision_layer = 2
+
+[node name="sprite_platform" type="Sprite2D" parent="platform"]
+texture = ExtResource("2_tjl1t")
+region_enabled = true
+region_rect = Rect2(96, 64, 32, 16)
+
+[node name="collision" type="CollisionShape2D" parent="platform"]
+visible = false
+shape = SubResource("RectangleShape2D_kpgia")
+one_way_collision = true

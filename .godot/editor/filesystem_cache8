@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747633058
-::res://assets/::1747594317
+::res://::1747711677
+::res://assets/::1747669409
 ::res://assets/sounds/::1747587814
-::res://assets/sprites/::1747604252
+::res://assets/sprites/::1747669412
 ::res://assets/sprites/backgrounds/::1747628823
 bg_layer_1.png::CompressedTexture2D::3321790168256995624::1747628808::1747628823::1::::<><>::
 bg_layer_2.png::CompressedTexture2D::7707013852979401518::1747628788::1747628823::1::::<><>::
@@ -46,17 +46,127 @@ FlyingObelisk_no_lightnings_no_letter.png::CompressedTexture2D::1763318765797357
 6. Dash 112 x 56.png::CompressedTexture2D::7369303854839148455::1711087684::1747594783::1::::<><>::
 7. Hit 48 x 48.png::CompressedTexture2D::4919214908958060549::1711087780::1747594783::1::::<><>::
 8. Death 76 x 48.png::CompressedTexture2D::8803464891614596399::1711087874::1747594783::1::::<><>::
-::res://assets/sprites/tilesets/::1747603479
+::res://assets/sprites/tilesets/::1747669427
+::res://assets/sprites/tilesets/Mini FX, Items & UI/::1747668132
+::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/::1747668132
+LICENSE.txt::TextFile::-1::1747668132::0::1::::<><>::
+::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Common Pick-ups/::1747668448
+Coin (16 x 16).png::CompressedTexture2D::7781755731255402744::1747668132::1747668448::1::::<><>::
+Health_Kit (16 x 16).png::CompressedTexture2D::5519666053476760950::1747668132::1747668448::1::::<><>::
+Heart_Spin (16 x 16).png::CompressedTexture2D::376091699769396646::1747668132::1747668448::1::::<><>::
+Small_Coin (16 x 16).png::CompressedTexture2D::5923549237826504027::1747668132::1747668448::1::::<><>::
+Treasure_Chest (32 x 16).png::CompressedTexture2D::3639203732232179632::1747668132::1747668448::1::::<><>::
+Wrapped_Presents (16 x 16).png::CompressedTexture2D::7022405716348893215::1747668132::1747668448::1::::<><>::
+::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/::1747668448
+Bright_Sparkle (16 x 16).png::CompressedTexture2D::8643559259086976604::1747668132::1747668448::1::::<><>::
+Cloud_Poof (16 x 16).png::CompressedTexture2D::3039462742740411442::1747668132::1747668448::1::::<><>::
+Dust (16 x 16).png::CompressedTexture2D::1226019095857587199::1747668132::1747668448::1::::<><>::
+Explosion_Poof (16 x 16).png::CompressedTexture2D::5929413209839075580::1747668132::1747668448::1::::<><>::
+Yellow_Sparkle (16 x 16).png::CompressedTexture2D::3844376980230252096::1747668132::1747668448::1::::<><>::
+::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Food Items/::1747668448
+Bottled_Drinks (16 x 16).png::CompressedTexture2D::6876389031776286742::1747668132::1747668448::1::::<><>::
+Burger_&_Fries (16 x 16).png::CompressedTexture2D::3930891925267668330::1747668132::1747668448::1::::<><>::
+Cake_Slices (16 x 16).png::CompressedTexture2D::5395731338672848390::1747668132::1747668448::1::::<><>::
+Chocolate_Bars (16 x 16).png::CompressedTexture2D::1537118955996128913::1747668132::1747668448::1::::<><>::
+Fruits (16 x 16).png::CompressedTexture2D::8185544534723622878::1747668132::1747668448::1::::<><>::
+Grilled_Panini (16 x 16).png::CompressedTexture2D::641824762321442261::1747668132::1747668448::1::::<><>::
+Ice_Cream_Cones (16 x 16).png::CompressedTexture2D::7372253029695828229::1747668132::1747668448::1::::<><>::
+Milk_Cartons (16 x 16).png::CompressedTexture2D::846239216183295800::1747668132::1747668448::1::::<><>::
+Pancake_Stack (16 x 16).png::CompressedTexture2D::3748373329321537320::1747668132::1747668448::1::::<><>::
+Salad_Bowl (16 x 16).png::CompressedTexture2D::3192082543036531126::1747668132::1747668447::1::::<><>::
+Sushi_Variety (16 x 16).png::CompressedTexture2D::5290427256404900888::1747668132::1747668447::1::::<><>::
+Wrapped_Candies (16 x 16).png::CompressedTexture2D::6982191434049676089::1747668132::1747668447::1::::<><>::
+::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Mini UI/::1747668447
+Health_Indicator_Black_Outline (8 x 8).png::CompressedTexture2D::8105062861907235376::1747668132::1747668447::1::::<><>::
+Health_Indicator_White_Outline (8 x 8).png::CompressedTexture2D::6454624158095593774::1747668132::1747668447::1::::<><>::
+Mouse_Icons_Outlined (16 x 16).png::CompressedTexture2D::1850483454884751657::1747668132::1747668447::1::::<><>::
+Mouse_Icons_Outlined_Drop-shadowed (16 x 16).png::CompressedTexture2D::8124455452522784589::1747668132::1747668447::1::::<><>::
+Speech_Emotes (16 x 16).png::CompressedTexture2D::1107547519190449294::1747668132::1747668447::1::::<><>::
+Timer_Coin_Numbers_Drop-shadowed (8 x 8).png::CompressedTexture2D::5087336627654074089::1747668132::1747668447::1::::<><>::
+Timer_Coin_Numbers_Outlined (8 x 8).png::CompressedTexture2D::3069432065904914054::1747668132::1747668447::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/::1747669421
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/::1747669422
+LICENSE.txt::TextFile::-1::1747669422::0::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/::1747669446
+Extra_plants (16 x 16).png::CompressedTexture2D::5617448895507642317::1747669422::1747669446::1::::<><>::
+Grassland_entities (16 x 16).png::CompressedTexture2D::8272481448859246234::1747669422::1747669446::1::::<><>::
+Terrain (16 x 16).png::CompressedTexture2D::2288534161207117240::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Background parts/::1747669446
+1 - Foreground_scenery.png::CompressedTexture2D::1041777942762880926::1747669422::1747669446::1::::<><>::
+2 - Hills.png::CompressedTexture2D::5977744573343686655::1747669422::1747669446::1::::<><>::
+3 - Cloud_cover_1.png::CompressedTexture2D::802857108427647997::1747669422::1747669446::1::::<><>::
+4 - Cloud_cover_2.png::CompressedTexture2D::6657410634664286791::1747669422::1747669446::1::::<><>::
+5 - Sky_color.png::CompressedTexture2D::1884102925517638134::1747669422::1747669446::1::::<><>::
+_Complete_static_BG_(288 x 208).png::CompressedTexture2D::5975509744246824647::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/::1747669446
+Autumn_entities (16 x 16).png::CompressedTexture2D::2356071860714845770::1747669422::1747669446::1::::<><>::
+Terrain (16 x 16).png::CompressedTexture2D::2706727529760724643::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/Background parts/::1747669446
+1 - Leaf_top.png::CompressedTexture2D::3033749338642902499::1747669422::1747669446::1::::<><>::
+2 - Trees.png::CompressedTexture2D::2889577251998244133::1747669422::1747669446::1::::<><>::
+3 - Bottom_leaf_piles.png::CompressedTexture2D::5417462924884254239::1747669422::1747669446::1::::<><>::
+4 - Tree_row_BG_1.png::CompressedTexture2D::3695717106675413199::1747669422::1747669446::1::::<><>::
+5 - Tree_row_BG_2.png::CompressedTexture2D::817705159507357049::1747669422::1747669446::1::::<><>::
+6 - Distant_trees.png::CompressedTexture2D::8451860675100966694::1747669422::1747669446::1::::<><>::
+_Complete_static_BG_(288 x 208).png::CompressedTexture2D::8846711111511495014::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/3 - Tropics/::1747669446
+Terrain (16 x 16).png::CompressedTexture2D::1349485396124883707::1747669422::1747669446::1::::<><>::
+Tropics_entities (16 x 16).png::CompressedTexture2D::8747168723890559779::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/3 - Tropics/Background parts/::1747669446
+1 - Waters_version_1.png::CompressedTexture2D::8444029987050371338::1747669422::1747669446::1::::<><>::
+2 - Waters_version_2.png::CompressedTexture2D::5769167714440600360::1747669422::1747669446::1::::<><>::
+3 - Floating_clouds.png::CompressedTexture2D::3979058127632777320::1747669422::1747669446::1::::<><>::
+4 - Background_clouds.png::CompressedTexture2D::4247712919727682344::1747669422::1747669446::1::::<><>::
+5 - Sky_color.png::CompressedTexture2D::2572189824411844059::1747669422::1747669446::1::::<><>::
+_Complete_static_BG_(288 x 208).png::CompressedTexture2D::3415892933755728334::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/4 - Winter World/::1747669446
+Terrain (16 x 16).png::CompressedTexture2D::1061216535876687465::1747669422::1747669446::1::::<><>::
+Winter_entities (16 x 16).png::CompressedTexture2D::5409441672669109070::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/4 - Winter World/Background parts/::1747669446
+1 - Snowy_foreground_area.png::CompressedTexture2D::5055523474775551752::1747669422::1747669446::1::::<><>::
+2 - Smaller_mountains.png::CompressedTexture2D::2361318481184861130::1747669422::1747669446::1::::<><>::
+3 - Big_mountain_BG.png::CompressedTexture2D::5316374614814917093::1747669422::1747669446::1::::<><>::
+_Complete_static_BG_(288 x 208).png::CompressedTexture2D::6512781848136217189::1747669422::1747669446::1::::<><>::
+::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/::1747669446
+Blocks (16 x 16).png::CompressedTexture2D::5432899149696354973::1747669422::1747669446::1::::<><>::
+Bubbling_Oil_frames (16 x 32).png::CompressedTexture2D::2963527495654861932::1747669422::1747669446::1::::<><>::
+Flowers (16 x 16).png::CompressedTexture2D::4294167620248898264::1747669422::1747669446::1::::<><>::
+House (112 x 96).png::CompressedTexture2D::1090679916276626193::1747669422::1747669446::1::::<><>::
+Lava_frames (16 x 32).png::CompressedTexture2D::2435512693952733325::1747669422::1747669446::1::::<><>::
+Metal_Wire_fence (16 x 16).png::CompressedTexture2D::570418732253897388::1747669422::1747669446::1::::<><>::
+Rock_shape (16 x 16).png::CompressedTexture2D::4363336905709671520::1747669422::1747669446::1::::<><>::
+Snack_machine_Bench_Trash_bin (16 x 16).png::CompressedTexture2D::6420138813472773848::1747669422::1747669446::1::::<><>::
+Water_frames (16 x 32).png::CompressedTexture2D::3324780069947483577::1747669422::1747669446::1::::<><>::
 ::res://assets/sprites/tilesets/shadow map Asset/::1747603474
 ::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/::1747606556
 Tilemap.png::CompressedTexture2D::2805444131831315147::1747606481::1747606556::1::::<><>::
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/::1747668272
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/::1724580205
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/borders/::1724524893
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/borders/Sprite/::1747668447
+border 1.png::CompressedTexture2D::7392768917496184479::1724524847::1747668447::1::::<><>::
+border 2.png::CompressedTexture2D::7698650964410537963::1724524857::1747668447::1::::<><>::
+border 3.png::CompressedTexture2D::456260514226445645::1724524868::1747668447::1::::<><>::
+border 4.png::CompressedTexture2D::6048687595786562189::1724524876::1747668447::1::::<><>::
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/::1724525809
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/::1747717194
+alterado.png::CompressedTexture2D::3768111320998845140::1747717194::1747717212::1::::<><>::
+Loading Icons 1.png::CompressedTexture2D::2674837252123291749::1724525816::1747668447::1::::<><>::
+Loading Icons 2.png::CompressedTexture2D::5598100278846528942::1724525826::1747668447::1::::<><>::
+Loading Icons 3.png::CompressedTexture2D::7500300730761676248::1724525836::1747668448::1::::<><>::
+Loading Icons 5.png::CompressedTexture2D::8383500775380810655::1724525858::1747668448::1::::<><>::
+Loading Icons 6.png::CompressedTexture2D::7186725917002446654::1724525872::1747668448::1::::<><>::
+Loading Icons 7.png::CompressedTexture2D::1833354693540400422::1724525884::1747668448::1::::<><>::
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747602833
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747603494
 tile map.png::CompressedTexture2D::591424773554523410::1718128450::1747603494::1::::<><>::
-::res://scenes/::1747630957
-main.tscn::PackedScene::8876151798454143804::1747630957::0::1::::<><>::uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png
-player.tscn::PackedScene::7440879949689737896::1747630957::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://b8yhi5vhfucaf::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/5. Attack 131 x 56.png<>uid://dc80mfv1ldey6::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/6. Dash 112 x 56.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
-::res://scripts/::1747630793
+::res://prefabs/::1747713083
+moving_platform.tscn::PackedScene::8025240548093838181::1747713083::0::1::::<><>::uid://cjn0b44d4mdnh::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
+::res://scenes/::1747713082
+main.tscn::PackedScene::8876151798454143804::1747713082::0::1::::<><>::uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://dmlqslpvenqxp::::res://prefabs/moving_platform.tscn<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>res://shaders/movement_clouds.gdshader<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png
+player.tscn::PackedScene::7440879949689737896::1747713082::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://b8yhi5vhfucaf::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/5. Attack 131 x 56.png<>uid://dc80mfv1ldey6::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/6. Dash 112 x 56.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
+::res://scripts/::1747700051
+moving_platform.gd::GDScript::-1::1747700051::0::1::::<>Node2D<>::
 player.gd::GDScript::-1::1747630793::0::1::::<>CharacterBody2D<>::
-::res://shaders/::1747631399
-movement_clouds.gdshader::Shader::-1::1747631399::0::1::::<><>::
+::res://shaders/::1747713083
+movement_clouds.gdshader::Shader::-1::1747713083::0::1::::<><>::

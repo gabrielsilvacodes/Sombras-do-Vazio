@@ -1,0 +1,143 @@
+[gd_scene load_steps=21 format=3 uid="uid://cgato2fbhscll"]
+
+[ext_resource type="Script" path="res://scripts/lux.gd" id="1_kga2r"]
+[ext_resource type="Texture2D" uid="uid://btxkii3cvpbu7" path="res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/alterado.png" id="1_ky7xr"]
+[ext_resource type="Texture2D" uid="uid://dvfafm3hmjf77" path="res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/Bright_Sparkle (16 x 16).png" id="2_8mou0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3k8sj"]
+atlas = ExtResource("2_8mou0")
+region = Rect2(0, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4nov"]
+atlas = ExtResource("2_8mou0")
+region = Rect2(20, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqh8c"]
+atlas = ExtResource("2_8mou0")
+region = Rect2(40, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqxag"]
+atlas = ExtResource("2_8mou0")
+region = Rect2(60, 0, 20, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wqqh"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8xys"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ykp7"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iuvo7"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ric4b"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykujn"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srap7"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7omu0"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btgk6"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_215mr"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqbw5"]
+atlas = ExtResource("1_ky7xr")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3rc57"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3k8sj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d4nov")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eqh8c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqxag")
+}],
+"loop": false,
+"name": &"collect",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3wqqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8xys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ykp7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iuvo7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ric4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykujn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srap7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7omu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btgk6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_215mr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqbw5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ecu4p"]
+radius = 9.0
+
+[node name="lux" type="Area2D"]
+collision_layer = 9
+script = ExtResource("1_kga2r")
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3rc57")
+animation = &"collect"
+autoplay = "idle"
+frame = 3
+frame_progress = 1.0
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ecu4p")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]

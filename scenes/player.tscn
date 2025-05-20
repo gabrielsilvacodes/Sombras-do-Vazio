@@ -527,16 +527,18 @@ animations = [{
 
 [node name="player" type="CharacterBody2D"]
 position = Vector2(70, 189)
+collision_mask = 2
 script = ExtResource("1_37rgs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_b86rq")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 limit_left = 0
 limit_smoothed = true
-drag_horizontal_enabled = true
 drag_left_margin = 0.5
 drag_right_margin = 0.5
 editor_draw_limits = true
