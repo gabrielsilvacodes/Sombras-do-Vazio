@@ -1,52 +1,71 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
-const JUMP_FORCE = -400.0
+const SPEED := 200.0
+const JUMP_FORCE := -400.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
-var is_jumping := false
-var was_on_floor := false
+var player_life := 3
+var knockback_vector := Vector2.ZERO
 
 @onready var animation: AnimatedSprite2D = $Anim
+@onready var remote_transform := $remote as RemoteTransform2D
 
 func _physics_process(delta):
-	# Detectar início de queda
-	var on_floor = is_on_floor()
-
-	if not on_floor:
+	# Gravidade
+	if not is_on_floor():
 		velocity.y += gravity * delta
 
-	# Início do pulo
-	if Input.is_action_just_pressed("ui_accept") and on_floor:
+	# Pulo
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_FORCE
-		is_jumping = true
 
 	# Direção horizontal
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction:
+	var direction := Input.get_axis("ui_left", "ui_right")
+	if direction != 0:
 		velocity.x = direction * SPEED
 		animation.scale.x = direction
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	# 📌 ANIMAÇÕES
-	if not on_floor:
+	# 📌 Animações
+	if not is_on_floor():
 		if velocity.y < 0:
-			animation.play("jump")  # Subindo
+			animation.play("jump")
 		else:
-			animation.play("fall")  # Caindo
-	elif direction:
+			animation.play("fall")
+	elif direction != 0:
 		animation.play("run")
 	else:
 		animation.play("idle")
 
-	# Detectar pouso (transição de queda para chão)
-	if not was_on_floor and on_floor:
-		is_jumping = false
-		# Aqui você pode adicionar uma animação de "landing" se tiver
+	# Knockback
+	if knockback_vector != Vector2.ZERO:
+		velocity = knockback_vector
 
-	was_on_floor = on_floor
-
-	# Movimento final
 	move_and_slide()
+
+# 👊 Recebendo dano do inimigo
+func _on_hurtbox_body_entered(body):
+	if player_life < 0:
+		queue_free()
+	else:
+		if $ray_right.is_colliding():
+			take_damage(Vector2(-200, -200))
+		elif $ray_left.is_colliding():
+			take_damage(Vector2(200, -200))
+
+# 🧭 Seguir a câmera
+func follow_camera(camera):
+	var camera_path = camera.get_path()
+	remote_transform.remote_path = camera_path
+
+# ❤️ Lógica de dano com feedback visual
+func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
+	player_life -= 1
+
+	if knockback_force != Vector2.ZERO:
+		knockback_vector = knockback_force
+		var knockback_tween := get_tree().create_tween()
+		knockback_tween.parallel().tween_property(self, "knockback_vector", Vector2.ZERO, duration)
+		animation.modulate = Color(1, 0, 0, 1)
+		knockback_tween.parallel().tween_property(animation, "modulate", Color(1, 1, 1, 1), duration)

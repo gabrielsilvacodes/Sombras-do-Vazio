@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0efuqovy8a3i"
-path="res://.godot/imported/FlyingObelisk_no_lightnings_no_letter.png-dd6843d344827cf00a5ce5b9c0ff7788.ctex"
+uid="uid://bxlxi60uw4a0o"
+path="res://.godot/imported/1. idle.png-3c1f080e92479fe05f1819c94c66c61d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/items/FlyingObelisk_Simple/FlyingObelisk_no_lightnings_no_letter.png"
-dest_files=["res://.godot/imported/FlyingObelisk_no_lightnings_no_letter.png-dd6843d344827cf00a5ce5b9c0ff7788.ctex"]
+source_file="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Voidwing/Sprite Sheet/1. idle.png"
+dest_files=["res://.godot/imported/1. idle.png-3c1f080e92479fe05f1819c94c66c61d.ctex"]
 
 [params]
 

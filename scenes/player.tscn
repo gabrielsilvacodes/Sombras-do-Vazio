@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://deaog8yxd7cxc"]
+[gd_scene load_steps=80 format=3 uid="uid://deaog8yxd7cxc"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_37rgs"]
 [ext_resource type="Texture2D" uid="uid://c7xiuy4ofc2tk" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png" id="1_xmg6a"]
@@ -9,9 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://ccc50r8ggxvxl" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png" id="6_rlpip"]
 [ext_resource type="Texture2D" uid="uid://ce7s6vc2jie0q" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png" id="8_76pj8"]
 [ext_resource type="Texture2D" uid="uid://cxrv65d2l1g4a" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png" id="9_4davu"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b86rq"]
-size = Vector2(15, 38)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_phfsm"]
 atlas = ExtResource("2_0ut3j")
@@ -525,28 +522,50 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b86rq"]
+size = Vector2(10, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hpvip"]
+size = Vector2(15, 30)
+
 [node name="player" type="CharacterBody2D"]
-position = Vector2(70, 189)
-collision_mask = 2
+position = Vector2(102, 87)
+collision_mask = 22
 script = ExtResource("1_37rgs")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0.5, -1)
-shape = SubResource("RectangleShape2D_b86rq")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-visible = false
-limit_left = 0
-limit_smoothed = true
-drag_left_margin = 0.5
-drag_right_margin = 0.5
-editor_draw_limits = true
-editor_draw_drag_margin = true
+[node name="Animator" type="AnimationPlayer" parent="."]
 
 [node name="Anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(13, 1)
 sprite_frames = SubResource("SpriteFrames_nfkha")
-animation = &"hit"
+animation = &"fall"
 autoplay = "idle"
 
-[node name="Animator" type="AnimationPlayer" parent="."]
+[node name="collision" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_b86rq")
+
+[node name="hurtbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="collision" type="CollisionShape2D" parent="hurtbox"]
+visible = false
+position = Vector2(-0.5, -4)
+shape = SubResource("RectangleShape2D_hpvip")
+
+[node name="remote" type="RemoteTransform2D" parent="."]
+
+[node name="ray_right" type="RayCast2D" parent="."]
+visible = false
+position = Vector2(6, 8)
+target_position = Vector2(4, 0)
+collision_mask = 4
+
+[node name="ray_left" type="RayCast2D" parent="."]
+visible = false
+position = Vector2(-6, 8)
+target_position = Vector2(-4, 0)
+collision_mask = 4
+
+[connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]
