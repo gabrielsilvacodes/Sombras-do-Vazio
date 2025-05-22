@@ -7,7 +7,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var player_life := 3
 var knockback_vector := Vector2.ZERO
 
-@onready var animation: AnimatedSprite2D = $Anim
+@onready var animation: AnimatedSprite2D = $anim
 @onready var remote_transform := $remote as RemoteTransform2D
 
 func _physics_process(delta):
@@ -44,7 +44,7 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-# 👊 Recebendo dano do inimigo
+# Recebendo dano do inimigo
 func _on_hurtbox_body_entered(body):
 	if player_life < 0:
 		queue_free()
@@ -54,12 +54,12 @@ func _on_hurtbox_body_entered(body):
 		elif $ray_left.is_colliding():
 			take_damage(Vector2(200, -200))
 
-# 🧭 Seguir a câmera
+# Seguir a câmera
 func follow_camera(camera):
 	var camera_path = camera.get_path()
 	remote_transform.remote_path = camera_path
 
-# ❤️ Lógica de dano com feedback visual
+# Lógica de dano com feedback visual
 func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 	player_life -= 1
 
