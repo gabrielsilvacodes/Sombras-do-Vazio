@@ -8757,6 +8757,7 @@ centered = false
 visible = false
 limit_left = 0
 limit_smoothed = true
+position_smoothing_enabled = true
 drag_left_margin = 0.5
 drag_right_margin = 0.5
 editor_draw_limits = true

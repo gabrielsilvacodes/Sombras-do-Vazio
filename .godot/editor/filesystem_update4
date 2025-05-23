@@ -1,6 +1,6 @@
-res://scenes/player.tscn
-res://shaders/movement_clouds.gdshader
 res://scenes/main.tscn
+res://shaders/movement_clouds.gdshader
+res://scenes/player.tscn
 res://prefabs/moving_platform.tscn
 res://prefabs/lux.tscn
 res://scenes/enemy.tscn
