@@ -1,7 +1,8 @@
-[gd_scene load_steps=48 format=3 uid="uid://deaog8yxd7cxc"]
+[gd_scene load_steps=54 format=3 uid="uid://deaog8yxd7cxc"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_37rgs"]
 [ext_resource type="Texture2D" uid="uid://c7xiuy4ofc2tk" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png" id="1_xmg6a"]
+[ext_resource type="Texture2D" uid="uid://ccc50r8ggxvxl" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png" id="4_s02oh"]
 [ext_resource type="Texture2D" uid="uid://dxop1slh4sxj8" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png" id="4_tnide"]
 [ext_resource type="Texture2D" uid="uid://b5m3u5kcv14vc" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png" id="5_0l53n"]
 [ext_resource type="Texture2D" uid="uid://ce7s6vc2jie0q" path="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png" id="8_76pj8"]
@@ -61,6 +62,22 @@ region = Rect2(96, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wlccn"]
 atlas = ExtResource("5_0l53n")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1muy"]
+atlas = ExtResource("4_s02oh")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4c17"]
+atlas = ExtResource("4_s02oh")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vca7w"]
+atlas = ExtResource("4_s02oh")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0s5uv"]
+atlas = ExtResource("4_s02oh")
 region = Rect2(144, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8wir7"]
@@ -215,6 +232,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_g1muy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4c17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vca7w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0s5uv")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_8wir7")
 }, {
 "duration": 1.0,
@@ -307,15 +341,18 @@ size = Vector2(10, 36)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hpvip"]
 size = Vector2(15, 33)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xasdi"]
+size = Vector2(14.5, 5)
+
 [node name="player" type="CharacterBody2D"]
-collision_mask = 22
+collision_mask = 86
 script = ExtResource("1_37rgs")
 
 [node name="Animator" type="AnimationPlayer" parent="."]
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_h63q0")
-animation = &"idle"
+animation = &"hit"
 autoplay = "idle"
 
 [node name="collision" type="CollisionShape2D" parent="."]
@@ -343,5 +380,13 @@ visible = false
 position = Vector2(-6, 8)
 target_position = Vector2(-4, 0)
 collision_mask = 4
+
+[node name="head_collider" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 64
+
+[node name="head_collision" type="CollisionShape2D" parent="head_collider"]
+position = Vector2(0.25, -18.5)
+shape = SubResource("RectangleShape2D_xasdi")
 
 [connection signal="body_entered" from="hurtbox" to="." method="_on_hurtbox_body_entered"]

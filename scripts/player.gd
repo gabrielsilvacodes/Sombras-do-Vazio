@@ -4,8 +4,12 @@ const SPEED := 150.0
 const JUMP_FORCE := -400.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var is_jumping := false
+var is_hurted :=false
 var player_life := 3
 var knockback_vector := Vector2.ZERO
+var direction
+
 
 @onready var animation: AnimatedSprite2D = $anim
 @onready var remote_transform := $remote as RemoteTransform2D
@@ -18,30 +22,24 @@ func _physics_process(delta):
 	# Pulo
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_FORCE
+		is_jumping = true
+	elif is_on_floor():
+		is_jumping = false
 
 	# Direção horizontal
-	var direction := Input.get_axis("ui_left", "ui_right")
+	direction = Input.get_axis("ui_left", "ui_right")
+	
 	if direction != 0:
 		velocity.x = direction * SPEED
 		animation.scale.x = direction
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	# 📌 Animações
-	if not is_on_floor():
-		if velocity.y < 0:
-			animation.play("jump")
-		else:
-			animation.play("fall")
-	elif direction != 0:
-		animation.play("run")
-	else:
-		animation.play("idle")
-
 	# Knockback
 	if knockback_vector != Vector2.ZERO:
 		velocity = knockback_vector
-
+	
+	_set_state()
 	move_and_slide()
 
 # Recebendo dano do inimigo
@@ -69,3 +67,22 @@ func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 		knockback_tween.parallel().tween_property(self, "knockback_vector", Vector2.ZERO, duration)
 		animation.modulate = Color(1, 0, 0, 1)
 		knockback_tween.parallel().tween_property(animation, "modulate", Color(1, 1, 1, 1), duration)
+	
+	is_hurted = true
+	await get_tree().create_timer(.3).timeout
+	is_hurted = false
+
+func _set_state():
+	var state = "idle"
+	
+	if !is_on_floor():
+		state = "jump"
+	elif direction != 0:
+		state = "run"
+		
+	if is_hurted:
+		state = "hit"
+	
+	if animation.name != state:
+		animation.play(state)
+	

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://duiex4onmic0b"]
+
+[ext_resource type="Texture2D" uid="uid://ibhl2bl5suj7" path="res://assets/sprites/tilesets/Mini FX, Items & UI/falling-platform-brown.png" id="1_nbi8m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khnq7"]
+size = Vector2(32, 16)
+
+[node name="falling-platform" type="AnimatableBody2D"]
+
+[node name="texture" type="Sprite2D" parent="."]
+texture = ExtResource("1_nbi8m")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_khnq7")
+
+[node name="respawn_timer" type="Timer" parent="."]
+
+[node name="anim" type="AnimationPlayer" parent="."]
