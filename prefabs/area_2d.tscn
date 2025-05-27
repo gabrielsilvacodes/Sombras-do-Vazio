@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://t2mpwmc2fr2o"]
+
+[ext_resource type="Script" path="res://scripts/spikes-area.gd" id="1_eg6l2"]
+[ext_resource type="Texture2D" uid="uid://b4p85uxnt6dtv" path="res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png" id="2_ygrbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unt4h"]
+size = Vector2(7, 6)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_eg6l2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_unt4h")
+
+[node name="spikes2" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("2_ygrbx")
+region_enabled = true
+region_rect = Rect2(0, 8, 8, 8)

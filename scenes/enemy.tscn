@@ -212,6 +212,7 @@ collision_mask = 6
 [node name="hitbox" parent="." instance=ExtResource("6_rpyoe")]
 
 [node name="collision" type="CollisionShape2D" parent="hitbox"]
+visible = false
 position = Vector2(0, -4.42798)
 shape = SubResource("RectangleShape2D_f0kdy")
 

@@ -1,18 +1,68 @@
-[gd_scene load_steps=3 format=3 uid="uid://duiex4onmic0b"]
+[gd_scene load_steps=7 format=3 uid="uid://c4j7oyvge4ly7"]
 
+[ext_resource type="Script" path="res://scripts/falling_platform.gd" id="1_1ju3l"]
 [ext_resource type="Texture2D" uid="uid://ibhl2bl5suj7" path="res://assets/sprites/tilesets/Mini FX, Items & UI/falling-platform-brown.png" id="1_nbi8m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khnq7"]
 size = Vector2(32, 16)
 
+[sub_resource type="Animation" id="Animation_4q78p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texture:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1bx8y"]
+resource_name = "shake"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("texture:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(2, 0), Vector2(0, 0), Vector2(-2, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_or78s"]
+_data = {
+"RESET": SubResource("Animation_4q78p"),
+"shake": SubResource("Animation_1bx8y")
+}
+
 [node name="falling-platform" type="AnimatableBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_1ju3l")
 
 [node name="texture" type="Sprite2D" parent="."]
+position = Vector2(2, 0)
 texture = ExtResource("1_nbi8m")
 
 [node name="collision" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_khnq7")
+one_way_collision = true
 
 [node name="respawn_timer" type="Timer" parent="."]
 
 [node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_or78s")
+}
+
+[connection signal="timeout" from="respawn_timer" to="." method="_on_respawn_timer_timeout"]
+[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]

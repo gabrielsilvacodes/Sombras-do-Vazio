@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED := 700.0
+const SPEED := 800.0
 
 @onready var wall_detector := $wall_detector as RayCast2D
 @onready var sprite := $texture as Sprite2D

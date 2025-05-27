@@ -356,6 +356,7 @@ animation = &"hit"
 autoplay = "idle"
 
 [node name="collision" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_416mp")
 
@@ -364,6 +365,7 @@ collision_layer = 32
 collision_mask = 4
 
 [node name="collision" type="CollisionShape2D" parent="hurtbox"]
+visible = false
 position = Vector2(0.5, -1.5)
 shape = SubResource("RectangleShape2D_hpvip")
 
@@ -386,6 +388,7 @@ collision_layer = 0
 collision_mask = 64
 
 [node name="head_collision" type="CollisionShape2D" parent="head_collider"]
+visible = false
 position = Vector2(0.25, -18.5)
 shape = SubResource("RectangleShape2D_xasdi")
 

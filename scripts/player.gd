@@ -6,7 +6,7 @@ const JUMP_FORCE := -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_jumping := false
 var is_hurted :=false
-var player_life := 3
+var player_life := 10
 var knockback_vector := Vector2.ZERO
 var direction
 
@@ -41,16 +41,18 @@ func _physics_process(delta):
 	
 	_set_state()
 	move_and_slide()
+	
+	for platforms in get_slide_collision_count():
+		var collision = get_slide_collision(platforms)
+		if collision.get_collider().has_method("has_collided_with"):
+			collision.get_collider().has_collided_with(collision, self)
 
 # Recebendo dano do inimigo
 func _on_hurtbox_body_entered(body):
-	if player_life < 0:
-		queue_free()
-	else:
-		if $ray_right.is_colliding():
-			take_damage(Vector2(-200, -200))
-		elif $ray_left.is_colliding():
-			take_damage(Vector2(200, -200))
+	if $ray_right.is_colliding():
+		take_damage(Vector2(-200, -200))
+	elif $ray_left.is_colliding():
+		take_damage(Vector2(200, -200))
 
 # Seguir a câmera
 func follow_camera(camera):
@@ -59,7 +61,11 @@ func follow_camera(camera):
 
 # Lógica de dano com feedback visual
 func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
-	player_life -= 1
+	
+	if player_life > 0:
+		player_life -= 1
+	else:
+		queue_free()
 
 	if knockback_force != Vector2.ZERO:
 		knockback_vector = knockback_force
