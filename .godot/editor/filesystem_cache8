@@ -73,7 +73,7 @@ Obelisk_effects.png::CompressedTexture2D::1549652382126549184::1747776373::17477
 6. Dash 112 x 56.png::CompressedTexture2D::7369303854839148455::1711087684::1747594783::1::::<><>::
 7. Hit 48 x 48.png::CompressedTexture2D::4919214908958060549::1711087780::1747594783::1::::<><>::
 8. Death 76 x 48.png::CompressedTexture2D::8803464891614596399::1711087874::1747594783::1::::<><>::
-::res://assets/sprites/tilesets/::1747669427
+::res://assets/sprites/tilesets/::1748381994
 ::res://assets/sprites/tilesets/Mini FX, Items & UI/::1748323038
 falling-platform-brown.png::CompressedTexture2D::564021209756506930::1748323001::1748323038::1::::<><>::
 ::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/::1747668132
@@ -189,17 +189,28 @@ Loading Icons 7.png::CompressedTexture2D::1833354693540400422::1724525884::17476
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747602833
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/::1747603494
 tile map.png::CompressedTexture2D::591424773554523410::1718128450::1747603494::1::::<><>::
-::res://prefabs/::1748373084
-falling_platform.tscn::PackedScene::6828866470839282084::1748372640::0::1::::<><>::res://scripts/falling_platform.gd<>uid://ibhl2bl5suj7::::res://assets/sprites/tilesets/Mini FX, Items & UI/falling-platform-brown.png
-hitbox.tscn::PackedScene::5849284940559274885::1748372640::0::1::::<><>::res://scripts/hitbox.gd
-lux.tscn::PackedScene::5195154479101603689::1748372640::0::1::::<><>::res://scripts/lux.gd<>uid://btxkii3cvpbu7::::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/alterado.png<>uid://dvfafm3hmjf77::::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/Bright_Sparkle (16 x 16).png
-moving_platform.tscn::PackedScene::8025240548093838181::1748372640::0::1::::<><>::uid://cjn0b44d4mdnh::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
-spikes_area.tscn::PackedScene::1846400473476576886::1748373084::0::1::::<><>::res://scripts/spikes-area.gd<>uid://b4p85uxnt6dtv::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png
-::res://scenes/::1748372640
-enemy.tscn::PackedScene::6524320464906698662::1748372640::0::1::::<><>::res://scripts/enemy.gd<>uid://bho1nfnsdtdtv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/1. Walk.png<>uid://dhuqv20tnajjv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/3. hit.png<>uid://b3co4d52vlpep::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/4. Death.png<>uid://cplo4r32f1sb2::::res://prefabs/hitbox.tscn
-main.tscn::PackedScene::8876151798454143804::1748372640::0::1::::<><>::res://scripts/main.gd<>uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://dmlqslpvenqxp::::res://prefabs/moving_platform.tscn<>uid://cgato2fbhscll::::res://prefabs/lux.tscn<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>uid://c4j7oyvge4ly7::::res://prefabs/falling_platform.tscn<>res://shaders/movement_clouds.gdshader<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png<>uid://cy7outgx7smag::::res://scenes/enemy.tscn<>uid://1kn7fu8r73ru::::res://prefabs/spikes_area.tscn<>uid://b4p85uxnt6dtv::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png
-player.tscn::PackedScene::7440879949689737896::1748372640::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
-::res://scripts/::1748373084
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/::1748381994
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/::1717540904
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Button/::1717540798
+UI - button.png::CompressedTexture2D::7642428405290918407::1717540798::1748382133::1::::<><>::
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Icons/::1717540887
+UI - icons2.png::CompressedTexture2D::4682378459713435940::1717540887::1748382133::1::::<><>::
+UI - icons.png::CompressedTexture2D::5393795759251253424::1717540875::1748382133::1::::<><>::
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Things/::1717541029
+UI - bar.png::CompressedTexture2D::2029785792868239437::1717541029::1748382133::1::::<><>::
+UI - border.png::CompressedTexture2D::2679238539871438435::1717540973::1748382133::1::::<><>::
+::res://prefabs/::1748381605
+falling_platform.tscn::PackedScene::6828866470839282084::1748381605::0::1::::<><>::res://scripts/falling_platform.gd<>uid://ibhl2bl5suj7::::res://assets/sprites/tilesets/Mini FX, Items & UI/falling-platform-brown.png
+hitbox.tscn::PackedScene::5849284940559274885::1748381605::0::1::::<><>::res://scripts/hitbox.gd
+lux.tscn::PackedScene::5195154479101603689::1748381604::0::1::::<><>::res://scripts/lux.gd<>uid://btxkii3cvpbu7::::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/alterado.png<>uid://dvfafm3hmjf77::::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/Bright_Sparkle (16 x 16).png
+moving_platform.tscn::PackedScene::8025240548093838181::1748381604::0::1::::<><>::uid://cjn0b44d4mdnh::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
+area_2d.tscn::PackedScene::1390082793482525440::1748374449::0::1::::<><>::res://scripts/spikes-area.gd<>uid://b4p85uxnt6dtv::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png
+spikes_area.tscn::PackedScene::7941244953151691555::1748381605::0::1::::<><>::res://scripts/spikes-area.gd<>uid://b4p85uxnt6dtv::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png
+::res://scenes/::1748381685
+enemy.tscn::PackedScene::6524320464906698662::1748381604::0::1::::<><>::res://scripts/enemy.gd<>uid://bho1nfnsdtdtv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/1. Walk.png<>uid://dhuqv20tnajjv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/3. hit.png<>uid://b3co4d52vlpep::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/4. Death.png<>uid://cplo4r32f1sb2::::res://prefabs/hitbox.tscn
+main.tscn::PackedScene::8876151798454143804::1748381685::0::1::::<><>::res://scripts/main.gd<>uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://dmlqslpvenqxp::::res://prefabs/moving_platform.tscn<>uid://cgato2fbhscll::::res://prefabs/lux.tscn<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>uid://c4j7oyvge4ly7::::res://prefabs/falling_platform.tscn<>res://shaders/movement_clouds.gdshader<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png<>uid://cy7outgx7smag::::res://scenes/enemy.tscn<>uid://dle2e5vufrunb::::res://prefabs/spikes_area.tscn
+player.tscn::PackedScene::7440879949689737896::1748381604::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
+::res://scripts/::1748376642
 enemy.gd::GDScript::-1::1748361828::0::1::::<>CharacterBody2D<>::
 falling_platform.gd::GDScript::-1::1748355255::0::1::::<>AnimatableBody2D<>::
 hitbox.gd::GDScript::-1::1747793912::0::1::::<>Area2D<>::
@@ -207,6 +218,6 @@ lux.gd::GDScript::-1::1747722915::0::1::::<>Area2D<>::
 main.gd::GDScript::-1::1747787632::0::1::::<>Node2D<>::
 moving_platform.gd::GDScript::-1::1747700051::0::1::::<>Node2D<>::
 player.gd::GDScript::-1::1748370676::0::1::::<>CharacterBody2D<>::
-spikes-area.gd::GDScript::-1::1748373084::0::1::::<>Area2D<>::
-::res://shaders/::1748373084
-movement_clouds.gdshader::Shader::-1::1748373084::0::1::::<><>::
+spikes-area.gd::GDScript::-1::1748376642::0::1::::<>Area2D<>::
+::res://shaders/::1748381685
+movement_clouds.gdshader::Shader::-1::1748381685::0::1::::<><>::
