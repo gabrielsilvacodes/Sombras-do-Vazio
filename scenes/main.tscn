@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dypw6nllcj6m7"]
+[gd_scene load_steps=47 format=3 uid="uid://dypw6nllcj6m7"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_6r6cg"]
 [ext_resource type="PackedScene" uid="uid://deaog8yxd7cxc" path="res://scenes/player.tscn" id="1_fpvab"]
@@ -16,6 +16,30 @@
 [ext_resource type="Texture2D" uid="uid://bnldns7sc5rau" path="res://assets/sprites/backgrounds/bg_layer_1.png" id="9_cmbbb"]
 [ext_resource type="PackedScene" uid="uid://cy7outgx7smag" path="res://scenes/enemy.tscn" id="13_4syac"]
 [ext_resource type="PackedScene" uid="uid://dle2e5vufrunb" path="res://prefabs/spikes_area.tscn" id="16_ouuuc"]
+[ext_resource type="Script" path="res://scripts/hud_manager.gd" id="17_mlcve"]
+[ext_resource type="Texture2D" uid="uid://c0567l5cf2l4x" path="res://assets/sprites/tilesets/lux-sprites/frame_01.png" id="17_vyskf"]
+[ext_resource type="Texture2D" uid="uid://31ao2e7l2020" path="res://assets/sprites/tilesets/lux-sprites/frame_02.png" id="18_ogbi1"]
+[ext_resource type="Texture2D" uid="uid://ifhw34ovnyis" path="res://assets/sprites/tilesets/lux-sprites/frame_11.png" id="19_2u112"]
+[ext_resource type="Texture2D" uid="uid://chvqy4mxwfru4" path="res://assets/sprites/tilesets/lux-sprites/frame_03.png" id="20_dceqr"]
+[ext_resource type="Texture2D" uid="uid://m5cd3n21nie3" path="res://assets/sprites/tilesets/lux-sprites/frame_04.png" id="21_d78sg"]
+[ext_resource type="Texture2D" uid="uid://wuqp4ebumg8o" path="res://assets/sprites/tilesets/lux-sprites/frame_05.png" id="22_4yc4y"]
+[ext_resource type="Texture2D" uid="uid://um3ctkvgqmb0" path="res://assets/sprites/tilesets/lux-sprites/frame_06.png" id="23_2u7b4"]
+[ext_resource type="Texture2D" uid="uid://884rhxnchd48" path="res://assets/sprites/tilesets/lux-sprites/frame_07.png" id="24_xpwo6"]
+[ext_resource type="Texture2D" uid="uid://v5ou5jf8dx55" path="res://assets/sprites/tilesets/lux-sprites/frame_08.png" id="25_x3y0y"]
+[ext_resource type="Texture2D" uid="uid://imc04pxb520i" path="res://assets/sprites/tilesets/lux-sprites/frame_09.png" id="26_4b7ba"]
+[ext_resource type="Texture2D" uid="uid://cxi5meckf0vb5" path="res://assets/sprites/tilesets/lux-sprites/frame_10.png" id="27_4vgsl"]
+[ext_resource type="FontFile" uid="uid://tidag43fdgl1" path="res://assets/sprites/fonts/Creepster-Regular.ttf" id="28_txdaq"]
+[ext_resource type="Texture2D" uid="uid://dbnl5qnho0y05" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_0.png" id="30_q5cqo"]
+[ext_resource type="Texture2D" uid="uid://dtvb2lx7c6enu" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_1.png" id="31_1y2yp"]
+[ext_resource type="Texture2D" uid="uid://cg7x1t5v00jrn" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_10.png" id="32_yycmm"]
+[ext_resource type="Texture2D" uid="uid://doeu5jkvojoka" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_2.png" id="33_4lxqn"]
+[ext_resource type="Texture2D" uid="uid://b662cdmywpdwu" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_3.png" id="34_bb66q"]
+[ext_resource type="Texture2D" uid="uid://dxhbfttab4bdy" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_4.png" id="35_m0yqh"]
+[ext_resource type="Texture2D" uid="uid://behqsuvnir6ld" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_5.png" id="36_k2p7a"]
+[ext_resource type="Texture2D" uid="uid://b1ddpt7py1h08" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_6.png" id="37_bl5dy"]
+[ext_resource type="Texture2D" uid="uid://cm176bn7td1pp" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_7.png" id="38_qmsmi"]
+[ext_resource type="Texture2D" uid="uid://du1gbhqsqi6ur" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_8.png" id="39_8de2u"]
+[ext_resource type="Texture2D" uid="uid://bpw7jedcqr1ke" path="res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/vida_frame_9.png" id="40_g2ket"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vax26"]
 texture = ExtResource("1_gkua6")
@@ -8642,6 +8666,56 @@ sources/5 = SubResource("TileSetAtlasSource_umnq3")
 shader = ExtResource("6_xgmel")
 shader_parameter/move_speed = 0.05
 
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_461d0"]
+frames = 11
+speed_scale = 3.0
+frame_0/texture = ExtResource("17_vyskf")
+frame_1/texture = ExtResource("18_ogbi1")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("20_dceqr")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("21_d78sg")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("22_4yc4y")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("23_2u7b4")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("24_xpwo6")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("25_x3y0y")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("26_4b7ba")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("27_4vgsl")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("19_2u112")
+frame_10/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_52l6b"]
+frames = 11
+frame_0/texture = ExtResource("30_q5cqo")
+frame_0/duration = 0.0
+frame_1/texture = ExtResource("31_1y2yp")
+frame_1/duration = 0.0
+frame_2/texture = ExtResource("33_4lxqn")
+frame_2/duration = 0.0
+frame_3/texture = ExtResource("34_bb66q")
+frame_3/duration = 0.0
+frame_4/texture = ExtResource("35_m0yqh")
+frame_4/duration = 0.0
+frame_5/texture = ExtResource("36_k2p7a")
+frame_5/duration = 0.0
+frame_6/texture = ExtResource("37_bl5dy")
+frame_6/duration = 0.0
+frame_7/texture = ExtResource("38_qmsmi")
+frame_7/duration = 0.0
+frame_8/texture = ExtResource("39_8de2u")
+frame_8/duration = 0.0
+frame_9/texture = ExtResource("40_g2ket")
+frame_9/duration = 0.0
+frame_10/texture = ExtResource("32_yycmm")
+frame_10/duration = 0.0
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_6r6cg")
 
@@ -8692,6 +8766,9 @@ position = Vector2(1334, 209)
 
 [node name="lux14" parent="lux" instance=ExtResource("3_ouj7x")]
 position = Vector2(1030, 92)
+
+[node name="lux15" parent="lux" instance=ExtResource("3_ouj7x")]
+position = Vector2(878, 92)
 
 [node name="moving_platform" parent="." instance=ExtResource("3_gyx6w")]
 position = Vector2(728, 296)
@@ -8877,3 +8954,109 @@ rotation = 3.14159
 
 [node name="spikes-area5" parent="." instance=ExtResource("16_ouuuc")]
 position = Vector2(1186, 332)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="control" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("17_mlcve")
+
+[node name="clock_timer" type="Timer" parent="HUD/control"]
+autostart = true
+
+[node name="container" type="MarginContainer" parent="HUD/control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="lux_container" type="HBoxContainer" parent="HUD/control/container"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="lux_icon" type="TextureRect" parent="HUD/control/container/lux_container"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AnimatedTexture_461d0")
+
+[node name="lux_counter" type="Label" parent="HUD/control/container/lux_container"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("28_txdaq")
+theme_override_font_sizes/font_size = 16
+text = "0000"
+vertical_alignment = 1
+
+[node name="timer_container" type="HBoxContainer" parent="HUD/control/container"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="timer_label" type="Label" parent="HUD/control/container/timer_container"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("28_txdaq")
+theme_override_font_sizes/font_size = 16
+text = "TIME:"
+vertical_alignment = 1
+
+[node name="timer_counter" type="Label" parent="HUD/control/container/timer_container"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("28_txdaq")
+theme_override_font_sizes/font_size = 16
+text = "00:00"
+vertical_alignment = 1
+
+[node name="score_container" type="HBoxContainer" parent="HUD/control/container"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="score_label" type="Label" parent="HUD/control/container/score_container"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("28_txdaq")
+theme_override_font_sizes/font_size = 16
+text = "SCORE:"
+vertical_alignment = 1
+
+[node name="score_counter" type="Label" parent="HUD/control/container/score_container"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("28_txdaq")
+theme_override_font_sizes/font_size = 16
+text = "000000"
+vertical_alignment = 1
+
+[node name="life_container" type="HBoxContainer" parent="HUD/control/container"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="life_bar" type="TextureRect" parent="HUD/control/container/life_container"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AnimatedTexture_52l6b")
+stretch_mode = 2
+
+[connection signal="timeout" from="HUD/control/clock_timer" to="HUD/control" method="_on_clock_timer_timeout"]

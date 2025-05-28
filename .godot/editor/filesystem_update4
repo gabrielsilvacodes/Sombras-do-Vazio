@@ -1,6 +1,5 @@
 res://scenes/main.tscn
 res://shaders/movement_clouds.gdshader
-res://scripts/spikes-area.gd
 res://scenes/player.tscn
 res://prefabs/moving_platform.tscn
 res://prefabs/lux.tscn
@@ -8,3 +7,9 @@ res://scenes/enemy.tscn
 res://prefabs/hitbox.tscn
 res://prefabs/falling_platform.tscn
 res://prefabs/spikes_area.tscn
+res://scripts/hud_manager.gd
+res://scripts/lux.gd
+res://scripts/enemy.gd
+res://singletons/globals.gd
+res://scripts/player.gd
+res://scripts/main.gd

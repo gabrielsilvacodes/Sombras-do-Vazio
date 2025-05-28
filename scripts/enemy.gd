@@ -6,6 +6,8 @@ const SPEED := 800.0
 @onready var sprite := $texture as Sprite2D
 @onready var anim := $anim as AnimationPlayer
 
+@export var enemy_score := 100
+
 var direction := -1
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -30,4 +32,5 @@ func _reverse_direction():
 
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "death":
+		Globals.score += enemy_score
 		queue_free()

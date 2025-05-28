@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1748373174
+::res://::1748464915
 ::res://assets/::1747669409
 ::res://assets/sounds/::1747587814
-::res://assets/sprites/::1747669412
+::res://assets/sprites/::1748443305
 ::res://assets/sprites/backgrounds/::1747628823
 bg_layer_1.png::CompressedTexture2D::3321790168256995624::1747628808::1747628823::1::::<><>::
 bg_layer_2.png::CompressedTexture2D::7707013852979401518::1747628788::1747628823::1::::<><>::
@@ -57,6 +57,8 @@ Attack 1.png::CompressedTexture2D::5713197448444609490::1711311034::1747596970::
 Attack 2.png::CompressedTexture2D::4683434126838091724::1711311016::1747596970::1::::<><>::
 idle.png::CompressedTexture2D::3746564210222503218::1711310991::1747596970::1::::<><>::
 walk.png::CompressedTexture2D::1316898845993113891::1711311002::1747596970::1::::<><>::
+::res://assets/sprites/fonts/::1748445317
+Creepster-Regular.ttf::FontFile::1350285563351820624::1748443265::1748445317::1::::<><>::
 ::res://assets/sprites/items/::1747776378
 ::res://assets/sprites/items/Obelisk_demo/::1747776406
 Obelisk.png::CompressedTexture2D::8595788280345704364::1747776373::1747776406::1::::<><>::
@@ -73,7 +75,19 @@ Obelisk_effects.png::CompressedTexture2D::1549652382126549184::1747776373::17477
 6. Dash 112 x 56.png::CompressedTexture2D::7369303854839148455::1711087684::1747594783::1::::<><>::
 7. Hit 48 x 48.png::CompressedTexture2D::4919214908958060549::1711087780::1747594783::1::::<><>::
 8. Death 76 x 48.png::CompressedTexture2D::8803464891614596399::1711087874::1747594783::1::::<><>::
-::res://assets/sprites/tilesets/::1748381994
+::res://assets/sprites/tilesets/::1748450897
+::res://assets/sprites/tilesets/lux-sprites/::1748442671
+frame_01.png::CompressedTexture2D::6591433787339133573::1748442254::1748442671::1::::<><>::
+frame_02.png::CompressedTexture2D::2018987870364525339::1748442267::1748442671::1::::<><>::
+frame_03.png::CompressedTexture2D::5308531079415103217::1748442272::1748442671::1::::<><>::
+frame_04.png::CompressedTexture2D::904325739643712492::1748442273::1748442671::1::::<><>::
+frame_05.png::CompressedTexture2D::1586441903339758536::1748442274::1748442671::1::::<><>::
+frame_06.png::CompressedTexture2D::1430254067549137387::1748442276::1748442671::1::::<><>::
+frame_07.png::CompressedTexture2D::2386147861013217343::1748442409::1748442671::1::::<><>::
+frame_08.png::CompressedTexture2D::1536784392672467582::1748442277::1748442671::1::::<><>::
+frame_09.png::CompressedTexture2D::586450908382914406::1748442279::1748442671::1::::<><>::
+frame_10.png::CompressedTexture2D::6405542946048330092::1748442283::1748442671::1::::<><>::
+frame_11.png::CompressedTexture2D::572298460407660986::1748442283::1748442671::1::::<><>::
 ::res://assets/sprites/tilesets/Mini FX, Items & UI/::1748323038
 falling-platform-brown.png::CompressedTexture2D::564021209756506930::1748323001::1748323038::1::::<><>::
 ::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/::1747668132
@@ -178,7 +192,7 @@ border 2.png::CompressedTexture2D::7698650964410537963::1724524857::1747668447::
 border 3.png::CompressedTexture2D::456260514226445645::1724524868::1747668447::1::::<><>::
 border 4.png::CompressedTexture2D::6048687595786562189::1724524876::1747668447::1::::<><>::
 ::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/::1724525809
-::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/::1747717212
+::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/::1748442395
 alterado.png::CompressedTexture2D::3768111320998845140::1747717194::1747717212::1::::<><>::
 Loading Icons 1.png::CompressedTexture2D::2674837252123291749::1724525816::1747668447::1::::<><>::
 Loading Icons 2.png::CompressedTexture2D::5598100278846528942::1724525826::1747668447::1::::<><>::
@@ -191,33 +205,49 @@ Loading Icons 7.png::CompressedTexture2D::1833354693540400422::1724525884::17476
 tile map.png::CompressedTexture2D::591424773554523410::1718128450::1747603494::1::::<><>::
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/::1748381994
 ::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/::1717540904
-::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Button/::1717540798
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Button/::1748382133
 UI - button.png::CompressedTexture2D::7642428405290918407::1717540798::1748382133::1::::<><>::
-::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Icons/::1717540887
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Icons/::1748382133
 UI - icons2.png::CompressedTexture2D::4682378459713435940::1717540887::1748382133::1::::<><>::
 UI - icons.png::CompressedTexture2D::5393795759251253424::1717540875::1748382133::1::::<><>::
-::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Things/::1717541029
+::res://assets/sprites/tilesets/SHADOW Series - Pixel UI/SHADOW Series - Pixel UI/Things/::1748382133
 UI - bar.png::CompressedTexture2D::2029785792868239437::1717541029::1748382133::1::::<><>::
 UI - border.png::CompressedTexture2D::2679238539871438435::1717540973::1748382133::1::::<><>::
-::res://prefabs/::1748381605
-falling_platform.tscn::PackedScene::6828866470839282084::1748381605::0::1::::<><>::res://scripts/falling_platform.gd<>uid://ibhl2bl5suj7::::res://assets/sprites/tilesets/Mini FX, Items & UI/falling-platform-brown.png
-hitbox.tscn::PackedScene::5849284940559274885::1748381605::0::1::::<><>::res://scripts/hitbox.gd
-lux.tscn::PackedScene::5195154479101603689::1748381604::0::1::::<><>::res://scripts/lux.gd<>uid://btxkii3cvpbu7::::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/alterado.png<>uid://dvfafm3hmjf77::::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/Bright_Sparkle (16 x 16).png
-moving_platform.tscn::PackedScene::8025240548093838181::1748381604::0::1::::<><>::uid://cjn0b44d4mdnh::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
+::res://assets/sprites/tilesets/vida_sprites/::1748465119
+::res://assets/sprites/tilesets/vida_sprites/vida_frames_157x50/::1748465113
+vida_frame_0.png::CompressedTexture2D::7257010127051518232::1748465057::1748465125::1::::<><>::
+vida_frame_1.png::CompressedTexture2D::8536311561210555318::1748465057::1748465125::1::::<><>::
+vida_frame_2.png::CompressedTexture2D::8151431775831890132::1748465057::1748465125::1::::<><>::
+vida_frame_3.png::CompressedTexture2D::4627913654468609124::1748465057::1748465125::1::::<><>::
+vida_frame_4.png::CompressedTexture2D::8788126772292171450::1748465057::1748465125::1::::<><>::
+vida_frame_5.png::CompressedTexture2D::2682631402208151773::1748465057::1748465125::1::::<><>::
+vida_frame_6.png::CompressedTexture2D::4217733737523023551::1748465057::1748465125::1::::<><>::
+vida_frame_7.png::CompressedTexture2D::5670779690113003517::1748465057::1748465125::1::::<><>::
+vida_frame_8.png::CompressedTexture2D::8617079226415900341::1748465057::1748465125::1::::<><>::
+vida_frame_9.png::CompressedTexture2D::3486628879607337416::1748465057::1748465125::1::::<><>::
+vida_frame_10.png::CompressedTexture2D::5261478484095796331::1748465057::1748465125::1::::<><>::
+::res://prefabs/::1748464528
 area_2d.tscn::PackedScene::1390082793482525440::1748374449::0::1::::<><>::res://scripts/spikes-area.gd<>uid://b4p85uxnt6dtv::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png
-spikes_area.tscn::PackedScene::7941244953151691555::1748381605::0::1::::<><>::res://scripts/spikes-area.gd<>uid://b4p85uxnt6dtv::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png
-::res://scenes/::1748381685
-enemy.tscn::PackedScene::6524320464906698662::1748381604::0::1::::<><>::res://scripts/enemy.gd<>uid://bho1nfnsdtdtv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/1. Walk.png<>uid://dhuqv20tnajjv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/3. hit.png<>uid://b3co4d52vlpep::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/4. Death.png<>uid://cplo4r32f1sb2::::res://prefabs/hitbox.tscn
-main.tscn::PackedScene::8876151798454143804::1748381685::0::1::::<><>::res://scripts/main.gd<>uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://dmlqslpvenqxp::::res://prefabs/moving_platform.tscn<>uid://cgato2fbhscll::::res://prefabs/lux.tscn<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>uid://c4j7oyvge4ly7::::res://prefabs/falling_platform.tscn<>res://shaders/movement_clouds.gdshader<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png<>uid://cy7outgx7smag::::res://scenes/enemy.tscn<>uid://dle2e5vufrunb::::res://prefabs/spikes_area.tscn
-player.tscn::PackedScene::7440879949689737896::1748381604::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
-::res://scripts/::1748376642
-enemy.gd::GDScript::-1::1748361828::0::1::::<>CharacterBody2D<>::
+falling_platform.tscn::PackedScene::6828866470839282084::1748464528::0::1::::<><>::res://scripts/falling_platform.gd<>uid://ibhl2bl5suj7::::res://assets/sprites/tilesets/Mini FX, Items & UI/falling-platform-brown.png
+hitbox.tscn::PackedScene::5849284940559274885::1748464528::0::1::::<><>::res://scripts/hitbox.gd
+lux.tscn::PackedScene::5195154479101603689::1748464527::0::1::::<><>::res://scripts/lux.gd<>uid://btxkii3cvpbu7::::res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/alterado.png<>uid://dvfafm3hmjf77::::res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/Bright_Sparkle (16 x 16).png
+moving_platform.tscn::PackedScene::8025240548093838181::1748464527::0::1::::<><>::uid://cjn0b44d4mdnh::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
+spikes_area.tscn::PackedScene::7941244953151691555::1748464528::0::1::::<><>::res://scripts/spikes-area.gd<>uid://b4p85uxnt6dtv::::res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/Spike.png
+::res://scenes/::1748464904
+enemy.tscn::PackedScene::6524320464906698662::1748464527::0::1::::<><>::res://scripts/enemy.gd<>uid://bho1nfnsdtdtv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/1. Walk.png<>uid://dhuqv20tnajjv::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/3. hit.png<>uid://b3co4d52vlpep::::res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/4. Death.png<>uid://cplo4r32f1sb2::::res://prefabs/hitbox.tscn
+main.tscn::PackedScene::8876151798454143804::1748464904::0::1::::<><>::res://scripts/main.gd<>uid://deaog8yxd7cxc::::res://scenes/player.tscn<>uid://ioqxdvqitdqo::::res://assets/sprites/tilesets/SHADOW Series - Pixel Tile Map Asset Pack 3/SHADOW Series - Pixel Tile Map Asset Pack 3/tile map.png<>uid://bf78iw0mt4740::::res://assets/sprites/tilesets/shadow map Asset/shadow map Asset/Tilemap.png<>uid://dmlqslpvenqxp::::res://prefabs/moving_platform.tscn<>uid://cgato2fbhscll::::res://prefabs/lux.tscn<>uid://csrgfuyi80mly::::res://assets/sprites/backgrounds/bg_layer_6.png<>uid://crl87ytnrjvt0::::res://assets/sprites/backgrounds/bg_layer_5.png<>uid://c4j7oyvge4ly7::::res://prefabs/falling_platform.tscn<>res://shaders/movement_clouds.gdshader<>uid://cuhqa7rstafen::::res://assets/sprites/backgrounds/bg_layer_4.png<>uid://dc72ajyrn3uft::::res://assets/sprites/backgrounds/bg_layer_3.png<>uid://dh2lnllb3m8fa::::res://assets/sprites/backgrounds/bg_layer_2.png<>uid://bnldns7sc5rau::::res://assets/sprites/backgrounds/bg_layer_1.png<>uid://cy7outgx7smag::::res://scenes/enemy.tscn<>uid://dle2e5vufrunb::::res://prefabs/spikes_area.tscn<>res://scripts/hud_manager.gd<>uid://c0567l5cf2l4x::::res://assets/sprites/tilesets/lux-sprites/frame_01.png<>uid://31ao2e7l2020::::res://assets/sprites/tilesets/lux-sprites/frame_02.png<>uid://ifhw34ovnyis::::res://assets/sprites/tilesets/lux-sprites/frame_11.png<>uid://chvqy4mxwfru4::::res://assets/sprites/tilesets/lux-sprites/frame_03.png<>uid://m5cd3n21nie3::::res://assets/sprites/tilesets/lux-sprites/frame_04.png<>uid://wuqp4ebumg8o::::res://assets/sprites/tilesets/lux-sprites/frame_05.png<>uid://um3ctkvgqmb0::::res://assets/sprites/tilesets/lux-sprites/frame_06.png<>uid://884rhxnchd48::::res://assets/sprites/tilesets/lux-sprites/frame_07.png<>uid://v5ou5jf8dx55::::res://assets/sprites/tilesets/lux-sprites/frame_08.png<>uid://imc04pxb520i::::res://assets/sprites/tilesets/lux-sprites/frame_09.png<>uid://cxi5meckf0vb5::::res://assets/sprites/tilesets/lux-sprites/frame_10.png<>uid://tidag43fdgl1::::res://assets/sprites/fonts/Creepster-Regular.ttf
+player.tscn::PackedScene::7440879949689737896::1748464527::0::1::::<><>::res://scripts/player.gd<>uid://c7xiuy4ofc2tk::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/1. Idle 48 x 48.png<>uid://ccc50r8ggxvxl::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/7. Hit 48 x 48.png<>uid://dxop1slh4sxj8::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/8. Death 76 x 48.png<>uid://b5m3u5kcv14vc::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/4. Fall 48 x 48.png<>uid://ce7s6vc2jie0q::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/3. Jump 48 x 48.png<>uid://cxrv65d2l1g4a::::res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/2. Run 48 x 48.png
+::res://scripts/::1748464525
+enemy.gd::GDScript::-1::1748454760::0::1::::<>CharacterBody2D<>::
 falling_platform.gd::GDScript::-1::1748355255::0::1::::<>AnimatableBody2D<>::
 hitbox.gd::GDScript::-1::1747793912::0::1::::<>Area2D<>::
-lux.gd::GDScript::-1::1747722915::0::1::::<>Area2D<>::
-main.gd::GDScript::-1::1747787632::0::1::::<>Node2D<>::
+lux.gd::GDScript::-1::1748454359::0::1::::<>Area2D<>::
+main.gd::GDScript::-1::1748460847::0::1::::<>Node2D<>::
 moving_platform.gd::GDScript::-1::1747700051::0::1::::<>Node2D<>::
-player.gd::GDScript::-1::1748370676::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1748460069::0::1::::<>CharacterBody2D<>::
+hud_manager.gd::GDScript::-1::1748464525::0::1::::<>Control<>::
 spikes-area.gd::GDScript::-1::1748376642::0::1::::<>Area2D<>::
-::res://shaders/::1748381685
-movement_clouds.gdshader::Shader::-1::1748381685::0::1::::<><>::
+::res://shaders/::1748464904
+movement_clouds.gdshader::Shader::-1::1748464904::0::1::::<><>::
+::res://singletons/::1748464119
+globals.gd::GDScript::-1::1748464119::0::1::::<>Node<>::
