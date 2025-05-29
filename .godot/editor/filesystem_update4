@@ -7,9 +7,7 @@ res://scenes/enemy.tscn
 res://prefabs/hitbox.tscn
 res://prefabs/falling_platform.tscn
 res://prefabs/spikes_area.tscn
-res://scripts/hud_manager.gd
-res://scripts/lux.gd
+res://scenes/fly_patrol.tscn
 res://scripts/enemy.gd
-res://singletons/globals.gd
-res://scripts/player.gd
-res://scripts/main.gd
+res://scripts/voidwing.gd
+res://scripts/hitbox.gd
