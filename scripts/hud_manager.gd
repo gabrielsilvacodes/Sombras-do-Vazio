@@ -22,7 +22,7 @@ func _ready():
 
 func _process(delta):
 	# Atualiza HUD de lux e score
-	lux_counter.text = str("%02d/13" % Globals.lux)
+	lux_counter.text = str("%02d/14" % Globals.lux)
 	score_counter.text = str("%06d" % Globals.score)
 
 	# Atualiza frame da barra de vida

@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://cy7outgx7smag"]
 
-[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_sde8r"]
+[ext_resource type="Script" path="res://scripts/ground_enemy.gd" id="1_gegx8"]
 [ext_resource type="Texture2D" uid="uid://bho1nfnsdtdtv" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/1. Walk.png" id="1_uv7up"]
 [ext_resource type="Texture2D" uid="uid://dhuqv20tnajjv" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/3. hit.png" id="3_ww4un"]
 [ext_resource type="Texture2D" uid="uid://b3co4d52vlpep" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/4. Death.png" id="4_ggls4"]
@@ -185,7 +185,7 @@ size = Vector2(12, 1.14404)
 [node name="enemy" type="CharacterBody2D" groups=["enemies"]]
 collision_layer = 4
 collision_mask = 34
-script = ExtResource("1_sde8r")
+script = ExtResource("1_gegx8")
 
 [node name="texture" type="Sprite2D" parent="."]
 texture = ExtResource("1_uv7up")
@@ -215,5 +215,3 @@ collision_mask = 6
 visible = false
 position = Vector2(0, -4.42798)
 shape = SubResource("RectangleShape2D_f0kdy")
-
-[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]
