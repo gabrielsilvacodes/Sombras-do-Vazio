@@ -12,6 +12,8 @@ var direction
 
 @onready var animation: AnimatedSprite2D = $anim
 @onready var remote_transform := $remote as RemoteTransform2D
+@onready var jump_sfx = $jump_sfx as AudioStreamPlayer
+@onready var hit_sfx = $hit_sfx
 
 signal player_has_died()
 
@@ -24,8 +26,10 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_FORCE
 		is_jumping = true
+		jump_sfx.play()
 	elif is_on_floor():
 		is_jumping = false
+	
 
 	# Direção horizontal
 	direction = Input.get_axis("ui_left", "ui_right")
@@ -54,6 +58,7 @@ func _on_hurtbox_body_entered(body):
 		take_damage(Vector2(-200, -200))
 	elif $ray_left.is_colliding():
 		take_damage(Vector2(200, -200))
+	
 
 # Seguir a câmera
 func follow_camera(camera):
@@ -64,6 +69,7 @@ func follow_camera(camera):
 func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 	if Globals.player_life > 1:
 		Globals.player_life -= 1
+		hit_sfx.play()
 	else:
 		Globals.player_life = 0
 		emit_signal("player_has_died")

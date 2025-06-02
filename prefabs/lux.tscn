@@ -1,8 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://cgato2fbhscll"]
+[gd_scene load_steps=22 format=3 uid="uid://cgato2fbhscll"]
 
 [ext_resource type="Script" path="res://scripts/lux.gd" id="1_kga2r"]
 [ext_resource type="Texture2D" uid="uid://btxkii3cvpbu7" path="res://assets/sprites/tilesets/SHADOW Series - Free Ui/SHADOW Series - Free Ui/Loading Icons/Sprite/alterado.png" id="1_ky7xr"]
 [ext_resource type="Texture2D" uid="uid://dvfafm3hmjf77" path="res://assets/sprites/tilesets/Mini FX, Items & UI/Mini FX, Items & UI/Effects/Bright_Sparkle (16 x 16).png" id="2_8mou0"]
+[ext_resource type="AudioStream" uid="uid://cmgcdmjhd2ooc" path="res://sounds/lux_colletc_sfx.ogg" id="4_mw3hl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3k8sj"]
 atlas = ExtResource("2_8mou0")
@@ -137,6 +138,10 @@ autoplay = "idle"
 [node name="collision" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource("CircleShape2D_ecu4p")
+
+[node name="lux_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_mw3hl")
+volume_db = 5.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]

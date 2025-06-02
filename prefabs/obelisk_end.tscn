@@ -1,0 +1,148 @@
+[gd_scene load_steps=20 format=3 uid="uid://cpdlsep26lkuf"]
+
+[ext_resource type="Script" path="res://scripts/obelisk_end.gd" id="1_8o5th"]
+[ext_resource type="Texture2D" uid="uid://wcwsv4ossyqq" path="res://assets/sprites/items/Obelisk_demo/Obelisk_effects.png" id="1_d17rs"]
+[ext_resource type="AudioStream" uid="uid://dnupj4mtpycu5" path="res://sounds/obelisk_end_sfx.wav" id="3_bahtp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qu3r8"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(380, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh1up"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(570, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_it57y"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(760, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv172"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(950, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb15d"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(1140, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cn45m"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(1330, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cugqv"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(1520, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1woks"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(1710, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mvf2"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(2090, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkyi3"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(2280, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2gb11"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(1900, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ss1xx"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(2470, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqu4j"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(0, 0, 190, 380)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyw6d"]
+atlas = ExtResource("1_d17rs")
+region = Rect2(190, 0, 190, 380)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wv8q4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qu3r8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hh1up")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_it57y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xv172")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bb15d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cn45m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cugqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1woks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mvf2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkyi3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2gb11")
+}],
+"loop": false,
+"name": &"activate",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ss1xx")
+}],
+"loop": true,
+"name": &"activated",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqu4j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyw6d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ca60i"]
+size = Vector2(52, 103)
+
+[node name="obelisk_end" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_8o5th")
+next_level = "res://scenes/level2.tscn"
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -90)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_wv8q4")
+animation = &"activated"
+autoplay = "idle"
+frame_progress = 0.266619
+
+[node name="collision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-1, -52.5)
+shape = SubResource("RectangleShape2D_ca60i")
+
+[node name="obelisk_end_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_bahtp")
+volume_db = -5.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

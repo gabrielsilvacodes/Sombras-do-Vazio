@@ -15,14 +15,14 @@ var seconds = 0
 signal time_is_up()
 
 func _ready():
-	lux_counter.text = str("%02d/13" % Globals.lux)
+	lux_counter.text = str("%04d" % Globals.lux)
 	score_counter.text = str("%06d" % Globals.score)
 	timer_counter.text = str("%02d" % default_minutes) + ":" + str("%02d" % default_seconds)
 	reset_clock_timer()
 
 func _process(delta):
 	# Atualiza HUD de lux e score
-	lux_counter.text = str("%02d/14" % Globals.lux)
+	lux_counter.text = str("%04d" % Globals.lux)
 	score_counter.text = str("%06d" % Globals.score)
 
 	# Atualiza frame da barra de vida
