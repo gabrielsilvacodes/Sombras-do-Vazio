@@ -14,3 +14,4 @@ res://prefabs/obelisk_end.tscn
 res://scenes/level2.tscn
 res://prefabs/lux.tscn
 res://scripts/ground_enemy.gd
+res://scripts/voidwing.gd

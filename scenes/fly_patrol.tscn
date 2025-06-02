@@ -1,10 +1,11 @@
-[gd_scene load_steps=34 format=3 uid="uid://dbotlv82164ts"]
+[gd_scene load_steps=35 format=3 uid="uid://dbotlv82164ts"]
 
 [ext_resource type="Texture2D" uid="uid://dwl8o64yivlw5" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Voidwing/Sprite Sheet/4. Death.png" id="1_2i2qj"]
 [ext_resource type="Script" path="res://scripts/voidwing.gd" id="1_hpxog"]
 [ext_resource type="Texture2D" uid="uid://ciafglobhetdf" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Voidwing/Sprite Sheet/2. Moving.png" id="2_vhrbt"]
 [ext_resource type="Texture2D" uid="uid://wqvpqrcxhea0" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Voidwing/Sprite Sheet/3. hit frame.png" id="3_5mirq"]
 [ext_resource type="PackedScene" uid="uid://cplo4r32f1sb2" path="res://prefabs/hitbox.tscn" id="4_cf1cg"]
+[ext_resource type="AudioStream" uid="uid://6vjnkm850ilf" path="res://sounds/fly_patrol_sfx.wav" id="6_6u8st"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_go60w"]
 atlas = ExtResource("1_2i2qj")
@@ -244,6 +245,10 @@ visible = false
 position = Vector2(0, -4.75)
 shape = SubResource("RectangleShape2D_7yo4m")
 debug_color = Color(0.93863, 0.0967538, 0.566551, 0.42)
+
+[node name="death_sound_player" type="AudioStreamPlayer" parent="voidwing"]
+stream = ExtResource("6_6u8st")
+volume_db = -5.0
 
 [node name="path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_ajhtn")

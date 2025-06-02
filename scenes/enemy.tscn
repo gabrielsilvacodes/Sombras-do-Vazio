@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://cy7outgx7smag"]
+[gd_scene load_steps=14 format=3 uid="uid://cy7outgx7smag"]
 
 [ext_resource type="Script" path="res://scripts/ground_enemy.gd" id="1_gegx8"]
 [ext_resource type="Texture2D" uid="uid://bho1nfnsdtdtv" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/1. Walk.png" id="1_uv7up"]
 [ext_resource type="Texture2D" uid="uid://dhuqv20tnajjv" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/3. hit.png" id="3_ww4un"]
 [ext_resource type="Texture2D" uid="uid://b3co4d52vlpep" path="res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Shadecrawler/Sprite Sheet/4. Death.png" id="4_ggls4"]
 [ext_resource type="PackedScene" uid="uid://cplo4r32f1sb2" path="res://prefabs/hitbox.tscn" id="6_rpyoe"]
+[ext_resource type="AudioStream" uid="uid://cjl5ohatw5gmj" path="res://sounds/enemy_sfx.wav" id="6_xmrwi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x6m66"]
 radius = 5.0
@@ -215,3 +216,9 @@ collision_mask = 6
 visible = false
 position = Vector2(0, -4.42798)
 shape = SubResource("RectangleShape2D_f0kdy")
+
+[node name="death_sound_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_xmrwi")
+volume_db = -5.0
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
