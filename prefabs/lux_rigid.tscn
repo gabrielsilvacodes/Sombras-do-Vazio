@@ -17,4 +17,10 @@ script = ExtResource("1_tm7rc")
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ugxja")
 
+[node name="pickup_timer" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+autostart = true
+
 [connection signal="tree_exited" from="lux" to="." method="_on_lux_tree_exited"]
+[connection signal="timeout" from="pickup_timer" to="." method="_on_pickup_timer_timeout"]

@@ -4,14 +4,6 @@ var luxs := 1
 @onready var lux_sfx = $lux_sfx as AudioStreamPlayer
 
 
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 
 func _on_body_entered(body):
 	$anim.play("collect")

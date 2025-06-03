@@ -137,17 +137,15 @@ func _on_coyote_timer_timeout():
 	can_jump = false
 	
 func lose_luxs():
-	var lost_luxs :int = min(Globals.luxs, 5)
-	$collision.set_deferred("disabled", true)
+	var lost_luxs: int = min(Globals.luxs, 5)
 	Globals.luxs -= lost_luxs
+
 	for i in lost_luxs:
 		var lux = LUX_SCENE.instantiate()
-		#get_parent().add_child(lux)
 		get_parent().call_deferred("add_child", lux)
 		lux.global_position = global_position
-		lux.apply_impulse(Vector2(randi_range(-100,100),-250))
-	await get_tree().create_timer(0.1).timeout
-	$collision.set_deferred("disabled", false)
+		lux.apply_impulse(Vector2(randi_range(-100, 100), -250))
+
 	
 
 func handle_death_zone():
