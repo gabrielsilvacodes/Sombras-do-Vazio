@@ -3,6 +3,8 @@ extends CharacterBody2D
 const SPEED := 150.0
 const AIR_FRICTION := 0.5
 
+const LUX_SCENE := preload("res://prefabs/lux_rigid.tscn")
+
 var is_jumping := false
 var can_jump := true
 var is_hurted := false
@@ -19,13 +21,12 @@ var gravity
 var fall_gravity
 
 
-@onready var animation: AnimatedSprite2D = $anim
+@onready var animation := $anim as AnimatedSprite2D
 @onready var remote_transform := $remote as RemoteTransform2D
 @onready var coyote_timer = $coyote_timer as Timer
 @onready var jump_sfx = $jump_sfx as AudioStreamPlayer
 @onready var hit_sfx = $hit_sfx
 @onready var player_start_position = $"../player_start_position"
-
 
 signal player_has_died()
 
@@ -60,7 +61,6 @@ func _physics_process(delta):
 
 	# Direção horizontal
 	direction = Input.get_axis("ui_left", "ui_right")
-	
 	if direction != 0:
 		velocity.x = lerp(velocity.x, direction * SPEED, AIR_FRICTION)
 		animation.scale.x = direction
@@ -96,17 +96,20 @@ func take_damage(knockback_force := Vector2.ZERO, duration := 0.25):
 		Globals.player_life -= 1
 		hit_sfx.play()
 	else:
-		Globals.player_life = 0
-		emit_signal("player_has_died")
 		queue_free()
+		emit_signal("player_has_died")
+		return  
 
 
 	if knockback_force != Vector2.ZERO:
 		knockback_vector = knockback_force
+		
 		var knockback_tween := get_tree().create_tween()
 		knockback_tween.parallel().tween_property(self, "knockback_vector", Vector2.ZERO, duration)
 		animation.modulate = Color(1, 0, 0, 1)
 		knockback_tween.parallel().tween_property(animation, "modulate", Color(1, 1, 1, 1), duration)
+		
+	lose_luxs()
 	
 	is_hurted = true
 	await get_tree().create_timer(.3).timeout
@@ -132,6 +135,20 @@ func _set_state():
 
 func _on_coyote_timer_timeout():
 	can_jump = false
+	
+func lose_luxs():
+	var lost_luxs :int = min(Globals.luxs, 5)
+	$collision.set_deferred("disabled", true)
+	Globals.luxs -= lost_luxs
+	for i in lost_luxs:
+		var lux = LUX_SCENE.instantiate()
+		#get_parent().add_child(lux)
+		get_parent().call_deferred("add_child", lux)
+		lux.global_position = global_position
+		lux.apply_impulse(Vector2(randi_range(-100,100),-250))
+	await get_tree().create_timer(0.1).timeout
+	$collision.set_deferred("disabled", false)
+	
 
 func handle_death_zone():
 	if Globals.player_life > 1:

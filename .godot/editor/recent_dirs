@@ -1,11 +1,11 @@
 res://scripts
-res://
 res://prefabs
+res://scenes
+res://
 res://assets/sprites/items/Obelisk_demo
 res://shaders
 res://assets/sprites/fonts/pixellari
 res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Voidwing/Sprite Sheet
-res://scenes
 res://singletons
 res://assets/sprites/tilesets/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles
 res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet

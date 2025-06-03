@@ -1,11 +1,11 @@
 extends Node
 
-signal  coins_updated
+signal luxs_updated
 signal score_updated
 
-var lux := 0
-var score := 0
-var player_life := 10
+var luxs := 0 
+var score := 0 
+var player_life := 10 
 
 var player = null
 

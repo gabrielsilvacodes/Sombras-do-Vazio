@@ -1,6 +1,6 @@
 extends Control
 
-@onready var lux_counter = $container/lux_container/lux_counter as Label
+@onready var luxs_counter = $container/luxs_container/luxs_counter as Label
 @onready var timer_counter = $container/timer_container/timer_counter as Label
 @onready var score_counter = $container/score_container/score_counter as Label
 @onready var clock_timer = $clock_timer as Timer
@@ -15,14 +15,14 @@ var seconds = 0
 signal time_is_up()
 
 func _ready():
-	lux_counter.text = str("%04d" % Globals.lux)
+	luxs_counter.text = str("%04d" % Globals.luxs)
 	score_counter.text = str("%06d" % Globals.score)
 	timer_counter.text = str("%02d" % default_minutes) + ":" + str("%02d" % default_seconds)
 	reset_clock_timer()
 
 func _process(delta):
 	# Atualiza HUD de lux e score
-	lux_counter.text = str("%04d" % Globals.lux)
+	luxs_counter.text = str("%04d" % Globals.luxs) 
 	score_counter.text = str("%06d" % Globals.score)
 
 	# Atualiza frame da barra de vida
