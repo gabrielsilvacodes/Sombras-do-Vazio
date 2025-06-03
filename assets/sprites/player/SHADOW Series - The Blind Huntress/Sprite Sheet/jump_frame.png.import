@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxg7fnqukydoy"
-path="res://.godot/imported/Bachground.png-df4fb5a09082d00f154c5c4527957081.ctex"
+uid="uid://bex61oufrommj"
+path="res://.godot/imported/jump_frame.png-be6f4476f17d43de6a1be346cdde7eba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/backgrounds/Bachground.png"
-dest_files=["res://.godot/imported/Bachground.png-df4fb5a09082d00f154c5c4527957081.ctex"]
+source_file="res://assets/sprites/player/SHADOW Series - The Blind Huntress/Sprite Sheet/jump_frame.png"
+dest_files=["res://.godot/imported/jump_frame.png-be6f4476f17d43de6a1be346cdde7eba.ctex"]
 
 [params]
 

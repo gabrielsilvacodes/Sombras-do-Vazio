@@ -1,8 +1,8 @@
-res://assets/sprites/items/Obelisk_demo
 res://scripts
-res://shaders
-res://prefabs
 res://
+res://prefabs
+res://assets/sprites/items/Obelisk_demo
+res://shaders
 res://assets/sprites/fonts/pixellari
 res://assets/sprites/enemies/SHADOW Mini - Voidwing & Shadecrawler/SHADOW Mini - Voidwing & Shadecrawler/Voidwing/Sprite Sheet
 res://scenes

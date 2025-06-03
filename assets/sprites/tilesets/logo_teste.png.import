@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxg7fnqukydoy"
-path="res://.godot/imported/Bachground.png-df4fb5a09082d00f154c5c4527957081.ctex"
+uid="uid://bas6r1db7aq8y"
+path="res://.godot/imported/logo_teste.png-68ae9ea231efa1a4376275ae8bb194c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/backgrounds/Bachground.png"
-dest_files=["res://.godot/imported/Bachground.png-df4fb5a09082d00f154c5c4527957081.ctex"]
+source_file="res://assets/sprites/tilesets/logo_teste.png"
+dest_files=["res://.godot/imported/logo_teste.png-68ae9ea231efa1a4376275ae8bb194c7.ctex"]
 
 [params]
 
