@@ -35,3 +35,4 @@ res://scripts/pause_menu.gd
 res://scripts/spikes-area.gd
 res://scripts/transition.gd
 res://scripts/voidwing.gd
+res://scenes/level2.tscn
